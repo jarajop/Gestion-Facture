@@ -1,14 +1,27 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Facture from './pages/Facture';
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div> <p>Bonjour tt le monde
-    </p></div>
+    <div>
+      <BrowserRouter>
+
+        <Routes>
+
+          <Route path='/' element={<App />} />
+          <Route path='/gestion_facture' element={<Facture />} />
+        </Routes>
+
+
+      </BrowserRouter>
+
+    </div>
   )
 }
 
