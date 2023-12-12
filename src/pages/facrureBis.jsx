@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "../assets/style/facture.css";
 import { useState } from 'react';
 
 function Facture() {
     const [listDepense, setListDepense] = useState([]);
     const [depense, setDepense] = useState({ id: null, libelle: "", montant: 0, date: "" });
-    const [error, setError] = useState(false);
+    const [Error, setError] = useState(false);
     const [isEditing, setIsEditing] = useState(false);
     const [filteredDate, setFilteredDate] = useState('');
+
+    useEffect(() => {
+        const savedList = JSON.parse(localStorage.getItem('maListeFacture'));
+        if (savedList) {
+            setListDepense(savedList);
+        }
+    }, []);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -27,7 +34,9 @@ function Facture() {
             setDepense({ id: null, libelle: "", montant: 0, date: "" });
         }
 
-        setError(false);
+        setError(false); 
+        localStorage.setItem('maListeDepense', JSON.stringify(listFacture));
+
     };
 
     const handleEdit = (index) => {
@@ -47,11 +56,14 @@ function Facture() {
         setListDepense(filteredDepenses);
     };
 
+    // useEffect(()=>{
+    //     return null
+    // },[listDepense])
     return (
         <div className='row'>
             <div className='col-6 shadow-lg p-3 mb-5 bg-body-tertiary rounded '>
                 <form onSubmit={handleSubmit} method='post'>
-                <div className="mb-3 ">
+                    <div className="mb-3 ">
                         <h2 className='text-warning pb-4'> Formulaire de gestion depense</h2>
 
                         <label className="form-label fs-4 text-danger-emphasis">Libellé de la dépense</label>
