@@ -9,13 +9,25 @@ function Facture() {
     const [isEditing, setIsEditing] = useState(false);
     const [filteredDate, setFilteredDate] = useState('');
 
-    useEffect(() => {
-        const savedList = JSON.parse(localStorage.getItem('maListeFacture'));
-        if (savedList) {
-            setListFacture(savedList);
+    useEffect(() => { 
+        // console.log(listFacture);
+        if (listFacture.length >0) {
+            
+            localStorage.setItem('items', JSON.stringify(listFacture)); //l'ajout de paires clé-valeur à localStorage :
         }
-    }, []);
+      }, [listFacture]); // la c le second argument
 
+    //Le useEffect()hook nous aide à récupérer tous les éléments lors du premier rendu, ce qui signifie que lorsque le composant est
+    // monté ou restitué, il obtient toutes nos données de localStorage.
+
+    useEffect(() => {
+        const listFacture = JSON.parse(localStorage.getItem('items'));
+        if (listFacture) {
+            setListFacture(listFacture);
+        }
+      }, []);
+      //Il est important de se rappeler que lorsque nous avons stocké les données, nous les avons d'abord converties en chaîne JSON.
+      // Cela signifie que pour pouvoir l'utiliser maintenant, nous devons reconvertir la chaîne JSON en objet JSON. Nous faisons cela avec la JSON.parse()méthode.
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -53,7 +65,13 @@ function Facture() {
     const handleFilterByDate = () => {
         const filteredFactures = listFacture.filter((facture) => facture.date === filteredDate);
         setListFacture(filteredFactures);
+
+        
     };
+    const SommeMontants = () => {
+        return listFacture.reduce((total, item) => total + parseInt(item.montant), 0);
+     };
+     
     
 
 
@@ -92,10 +110,15 @@ function Facture() {
                         <button type="button" onClick={handleFilterByDate}>Filtrer</button>
                     </div>
                     <button type="submit" className="btn btn-success" onClick={(e) => handleSubmit(e)}>{isEditing ? "Modifier" : "Ajouter"} dépense</button>
+
+                    <div class="shadow p-3 mb-5 bg-body-tertiary rounded">Regular shadow</div>
+
                 </form>
             </div>
             <div className='col-6 shadow p-3 mb-5 bg-body-tertiary rounded ml-3'>
                 <h2 className='text-primary pb-4'> La liste des dépenses</h2>
+                <div><h3>Somme totale des montants : {SommeMontants()}</h3></div>
+
                 {/* la on utilise la methode map ki va parcourir le tableau listfacture, recuperer la cle de chak element et 
 l'afficher dans la balise paragraphe */}
 

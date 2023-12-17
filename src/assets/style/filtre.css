@@ -1,0 +1,41 @@
+
+  .depart{
+    border-bottom: solid #F24873 ;
+  }
+  .input_circuit,
+  .input_circuit:focus{
+background: transparent;
+border: 0;
+outline: none;
+box-shadow: none;
+  }
+
+  .search_button{
+    display: inline-flex;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 4px;
+background: var(--primary);
+  }
+
+  .filtre_circuit{
+    border-radius: 8px;
+    border: 19px solid #fff;
+    background-color: #fff;
+    
+  }
+  .filtre_backdrop{
+    /* fill: rgba(255, 255, 255, 0.50); */
+    fill: rgb(240, 240, 240);
+    backdrop-filter: blur(2px);
+  }
+#landing_page{
+  background-image: url("../img/vue_aerienne_plage.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  height: 100vh;
+}
+  

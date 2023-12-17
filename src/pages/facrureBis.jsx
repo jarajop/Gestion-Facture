@@ -35,8 +35,8 @@ function Facture() {
         }
 
         setError(false); 
-        localStorage.setItem('maListeDepense', JSON.stringify(listFacture));
 
+        l
     };
 
     const handleEdit = (index) => {
