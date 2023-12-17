@@ -1,0 +1,183 @@
+#card_vehicule {
+    border-radius: 10px;
+    border: 0.333px solid #F24873;
+
+    background: #FFF;
+    padding-top: 15px;
+}
+
+.content_card {
+    border-radius: 22px 22px 0 0;
+        /* border: 0.4px solid #000; */
+    background: #FFF;
+    padding: 15px 12px;
+    text-align: justify;
+    width: 100%;
+    box-shadow: 0px 0px 11.3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.img_card_content {
+    width: 100%;
+    height: 0%;
+    object-fit: cover;
+    margin-top: 0px;
+    border-radius: 7px 7px 0px 0px;
+
+
+}
+
+
+
+.content_card_vehicule {
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5 all;
+    border-radius: 7px 7px 0px 0px;
+    border: 0px solid #EFF5F9;
+    background: rgba(0, 0, 0, 0.39);
+
+
+}
+
+.content_text_vehicule {
+    /* width: 100%;
+    padding: 8px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    object-fit: cover;
+    transition: 0.5 all;
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.71);
+    border: 0.4px solid #000; */
+
+}
+
+.text_vehicule {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.content_max {
+    color: #000;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text_button {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.button_vehicule {
+
+    width: 115px;
+    height: 28px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #F24873;
+    justify-content: end;
+    display: inline;
+
+}
+
+.content_card_vehicule:hover {
+    transition: 0.5s all;
+    background-color: #fff;
+
+}
+
+.content_card_vehicule:hover img {
+    /* transition: 0.5s all;
+    transform: scale(1.2); */
+}
+
+.content_card:hover {
+
+    transition: 0.5s all;
+    transform: scale(1.1);
+    padding-left: 80px;
+    padding-top: 80px;
+}
+
+.card_infos_booking {
+    border-radius: 3px;
+    border: 0.5px solid #EE6C76;
+    background: #FFF;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(3px);
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.item_infos_booking {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.item_infos_booking p {
+    padding: 0;
+    margin: 0;
+    color: #1d2424;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.Card_total_booking {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #EE6C76;
+    background: #EA4B74;
+    backdrop-filter: blur(3px);
+    margin: 15px 0;
+    padding: 10px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card_infos_car_booking {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card_infos_car_booking img {
+    width: 359px;
+    height: 201px;
+    flex-shrink: 0;
+    object-fit: cover;
+
+}
+
+.content_card .content_details {
+    border-left: 0.4px solid #000; /* Bordure côté gauche */
+    border-right: 0.4px solid #000; /* Bordure côté droit */
+    border-bottom: 0.4px solid #000; /* Bordure côté bas */
+    border-top: none;  }

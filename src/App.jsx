@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Facture from './pages/Facture';
 import Authentification from './pages/Authentification';
 import Filtre from './pages/Filtre';
+import Card from './pages/Card';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path='/gestion_facture' element={<Facture />} />
           <Route path='/connexion' element={<Authentification />} />
           <Route path='/filtre' element={<Filtre />} />
+          <Route path='/carte' element={<Card />} />
 
         </Routes>
 
