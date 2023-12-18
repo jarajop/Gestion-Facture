@@ -1,10 +1,10 @@
-#card_vehicule {
-    border-radius: 10px;
+/* #card_vehicule {
+    border-radius: 70px;
     border: 0.333px solid #F24873;
 
     background: #FFF;
     padding-top: 15px;
-}
+} */
 
 .content_card {
     border-radius: 22px 22px 0 0;
@@ -12,16 +12,19 @@
     background: #FFF;
     padding: 15px 12px;
     text-align: justify;
-    width: 100%;
-    box-shadow: 0px 0px 11.3px 0px rgba(0, 0, 0, 0.25);
+    /* width: 80%; */
+    width: 413px;
+    height: 397px;
 }
 
 .img_card_content {
     width: 100%;
-    height: 0%;
+    height: 201px;
     object-fit: cover;
     margin-top: 0px;
-    border-radius: 7px 7px 0px 0px;
+    border-radius: 22px 22px 0px 0px;
+    background: transparent;
+
 
 
 }
@@ -32,36 +35,28 @@
     width: 100%;
     object-fit: cover;
     transition: 0.5 all;
-    border-radius: 7px 7px 0px 0px;
+    border-radius: 22px 22px 0px 0px;
     border: 0px solid #EFF5F9;
-    background: rgba(0, 0, 0, 0.39);
+    background: transparent;
+    box-shadow: 0px 0px 11.3px 0px rgba(0, 0, 0, 0.25);
+
+
 
 
 }
 
-.content_text_vehicule {
-    /* width: 100%;
-    padding: 8px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    object-fit: cover;
-    transition: 0.5 all;
-    border-radius: 2px;
-    background: rgba(0, 0, 0, 0.71);
-    border: 0.4px solid #000; */
 
-}
 
 .text_vehicule {
-    color: #FFF;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: normal;
-    padding: 0;
+    color: #3D3D3D;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding: 5px 59px 0px 10px;
     margin: 0;
+   border-bottom: 0.1px solid #3D3D3D ;
 }
 
 .content_max {
@@ -74,7 +69,7 @@
 }
 
 .text_button {
-    color: #FFF;
+    color: var();
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -177,7 +172,25 @@
 }
 
 .content_card .content_details {
-    border-left: 0.4px solid #000; /* Bordure côté gauche */
-    border-right: 0.4px solid #000; /* Bordure côté droit */
-    border-bottom: 0.4px solid #000; /* Bordure côté bas */
-    border-top: none;  }
+    border-left: 0.5px solid #000; /* Bordure côté gauche */
+    border-right: 0.5px solid #000; /* Bordure côté droit */
+    border-bottom: 0.5px solid #000; /* Bordure côté bas */
+    border-top: none;
+    height: 197px;
+  }
+  .content_avis{
+    color: #3D3D3D;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  }
+  .content_hour{
+    color: #F24873;
+font-family: Roboto;
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  }
