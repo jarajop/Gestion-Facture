@@ -1,24 +1,24 @@
 import React from 'react'
-import Filtre from "./Filtre"
+import CardCircuit from "./CardCircuit"
+import Filtre from './Filtre'
 function Card() {
-  return  (
+  return (
     <main >
-    <div className="row row-cols-2 row-cols-lg-4 g-2 g-lg-4 mx-0 p-0 my-5">
-      <Filtre />
-      <Filtre />
-      <Filtre />
-      <Filtre />
+      <div className="row">
+        <div className='col-3'>  <Filtre /></div>
+        <div className='col-3'>  <CardCircuit /></div>
+        <div className='col-3'>  <CardCircuit /></div>
+        <div className='col-3'>  <CardCircuit /></div>
+      </div>
 
-    </div>
+      <div className="row row-cols-2 row-cols-lg-4 g-2 g-lg-3 mx-0 p-0 my-5">
+        <CardCircuit />
+        <CardCircuit />
+        <CardCircuit />
+        <CardCircuit />
 
-    <div className="row row-cols-2 row-cols-lg-4 g-2 g-lg-3 mx-0 p-0 my-5">
-      <Filtre />
-      <Filtre />
-      <Filtre />
-      <Filtre />
-
-    </div>
-  </main>  )
+      </div>
+    </main>)
 }
 
 export default Card
