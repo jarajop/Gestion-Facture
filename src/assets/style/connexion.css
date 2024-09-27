@@ -1,15 +1,37 @@
-.connexion{
-    background-color: #fff;
-    border-radius: 0 0 .625rem .625rem
+/* .divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.h-custom {
+  height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+  .h-custom {
+  height: 100%;
+  }
+} */
+
+
+/* Bouton "Connexion" en haut à droite */
+.top-right-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
-.img_login{
-    background-image: url("../img/vue_aerienne_plage.jpg");
-    width: 90%;
-    height: 90vh;
-    background-repeat: no-repeat; 
-    background-position: center; 
-   background-size: cover;
-  }
+.connexion-button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
 
-  
+.connexion-button:hover {
+  background-color: darkgreen;
+}

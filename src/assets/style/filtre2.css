@@ -69,13 +69,17 @@ padding: 5px 59px 0px 10px;
 }
 
 .text_button {
-    color: var();
+    width: 90%;
+    border-radius: 10px;
+    background: #F24873;
+    padding: 10px;
+    border: 0;
+    color: #FFF;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: normal;
-
 }
 
 .button_vehicule {

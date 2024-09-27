@@ -1,0 +1,76 @@
+/* S'assure que html et body occupent 100% de la hauteur */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* L'élément banner doit occuper toute la hauteur de la page */
+#img_banner_home_page {
+    background-image: url("../img/vue_aerienne_plage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw; /* Utilise toute la largeur de la fenêtre */
+    height: 100vh; /* Utilise toute la hauteur de la fenêtre */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* S'assure qu'il n'y a pas de débordement */
+}
+
+/* Autres styles déjà présents */
+.title_banner_home {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.subtitle_banner_home {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 39.063px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text_banner_home {
+    color: #FFF;
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 156.187%; /* 31.237px */
+}
+
+
+/* Typewriter effect */
+.typewriter h1 {
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    border-right: 2px solid rgba(255,255,255,0.75);
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  /* Animation de saisie */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  /* Clignotement du curseur */
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: rgba(255,255,255,0.75); }
+  }
+  

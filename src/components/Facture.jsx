@@ -111,7 +111,6 @@ function Facture() {
                     </div>
                     <button type="submit" className="btn btn-success" onClick={(e) => handleSubmit(e)}>{isEditing ? "Modifier" : "Ajouter"} dépense</button>
 
-                    <div class="shadow p-3 mb-5 bg-body-tertiary rounded">Regular shadow</div>
 
                 </form>
             </div>
