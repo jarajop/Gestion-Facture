@@ -35,3 +35,62 @@
 .connexion-button:hover {
   background-color: darkgreen;
 }
+
+/* src/assets/style/connexion.css */
+
+/* Ajustement de la taille de la carte et ajout d'une ombre */
+.content_card {
+  max-width: 300px; /* Taille maximale de la carte */
+  margin: auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  border-radius: 10px; /* Coins arrondis */
+  transition: transform 0.2s; /* Animation lors du survol */
+}
+
+.content_card:hover {
+  transform: scale(1.05); /* Zoom léger au survol */
+}
+
+/* Ajustement de l'image */
+.img_card_content {
+  border-radius: 10px 10px 0 0; /* Arrondir le haut de l'image */
+  width: 100%; /* S'assurer que l'image prend toute la largeur de la carte */
+  height: 200px; /* Ajuster la hauteur de l'image */
+  object-fit: cover; /* S'assurer que l'image s'ajuste à la taille sans déformer */
+}
+/* src/assets/style/connexion.css */
+
+/* Animation pour l'affichage lettre par lettre */
+.typing-animation {
+  font-size: 24px;
+  font-weight: bold;
+  color: purple;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: fit-content;
+  animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+}
+
+
+.welcome-message {
+  font-size: 100px; /* Augmente la taille de la police */
+  font-weight: bold; /* Rendre le texte en gras */
+  color: #333; /* Ajuste la couleur si besoin */
+}
+
+/* Styles pour le titre de la liste des smartphones */
+.text-primary {
+  font-size: 25px; /* Réduire la taille de la police */
+  font-weight: normal; /* Assure que le texte ne soit pas trop gras */
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
